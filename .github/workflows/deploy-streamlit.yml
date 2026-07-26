@@ -1,0 +1,35 @@
+name: Deploy to Streamlit Cloud
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+    
+    - name: Verify Streamlit app
+      run: |
+        cd app
+        streamlit run app.py --server.headless true &
+        sleep 5
+        curl http://localhost:8501 || exit 1
+        pkill streamlit
+    
+    - name: Deploy to Streamlit Cloud
+      run: |
+        echo "✅ App is ready for deployment"
+        echo "🔗 Visit: https://share.streamlit.io/YOUR_USERNAME/AI_Car_Price_Predictor"
