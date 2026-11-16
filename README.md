@@ -2,7 +2,7 @@
 
 An end-to-end AI system that predicts fair market price of used cars with **98.58% accuracy** using XGBoost.
 
-[![Streamlit App](https://img.shields.io/badge/Streamlit-App-red)](https://your-app-link.streamlit.app)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-red)](https://lnkd.in/dkvtEwSv)
 [![Python](https://img.shields.io/badge/Python-3.9-blue)](https://python.org)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue)](https://docker.com)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -47,8 +47,8 @@ AI_Car_Price_Predictor/
 
 
 # Clone repository
-git clone https://github.com/yourusername/AI_Car_Price_Predictor.git
-cd AI_Car_Price_Predictor
+git clone https://github.com/hussainrashdi456-blip/AI-Poewered_Vehichle_Price_Oracle.git
+cd AI-Poewered_Vehichle_Price_Oracle
 
 # Install dependencies
 pip install -r requirements.txt
@@ -67,9 +67,9 @@ Option 3: Docker Compose
 bash
 docker-compose up --build
 🔗 Links
-Live Demo: https://your-app.streamlit.app
+Live Demo: https://lnkd.in/dkvtEwSv
 
-GitHub: https://github.com/yourusername/AI_Car_Price_Predictor
+GitHub: https://github.com/hussainrashdi456-blip/AI-Poewered_Vehichle_Price_Oracle
 
 🛠️ Tech Stack
 Category	Technology
